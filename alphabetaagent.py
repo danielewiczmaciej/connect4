@@ -57,7 +57,7 @@ def advanced_static_eval(connect4: Connect4, player: str) -> float:
 
 
 class AlphaBetaAgent:
-    def __init__(self, my_token='o', eval_func=basic_static_eval, max_depth=4):
+    def __init__(self, my_token='o', eval_func=advanced_static_eval, max_depth=4):
         self.my_token = my_token
         self.eval_func = eval_func
         self.max_depth = max_depth
